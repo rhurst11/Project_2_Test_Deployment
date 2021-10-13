@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CO2 Emission Predictor</title>
+  <title>Loan Status Prediction</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -19,7 +19,7 @@
      <h3> Enter the following values to gain new insight on credit profile</h3>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
+    <form action="{{ url_for('predict')}}" method="post">
     	<input type="text" name="enginesize" placeholder="Engine Size" required="required" />
         <input type="text" name="cylinders" placeholder="Cylinders" required="required" />
 		<input type="text" name="fuel" placeholder="Fuel" required="required" />

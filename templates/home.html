@@ -1,4 +1,132 @@
 {% extends "layout.html" %}}
 {% block content %}
-    <h1>Welcome!</h1>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #f8fbfc;
+}
+
+.welcome-section {
+  padding: 25px;
+  text-align: left;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(5, 5, 5);
+  text-align: left;
+}
+
+.body_text {
+  color: rgb(5, 5, 5);
+  text-align: left;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+
+</head>
+
+<body>
+<div class="welcome-section">
+  <h1>Welcome to Shift!</h1>
+</div>
+
+<!-- <h2 style="text-align:center">Our Purpose</h2> -->
+
+
+<div class="column">
+    <div class="card">
+      <img src="../static/WelcomePgIMG1.png" alt="Purpose" style="width:100%">
+      <!-- <div class="container"> -->
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <div class="container">
+        <br></br>
+        <p class="title">Product Purpose </p>
+        <p class="body_text"> 
+
+            <br> We aim to provide a client-facing product that allows end-users to understand how their loan application, or general credit profile would be viewed by prospective institutional lenders. </br>
+            
+            <br> In order to account for the situational nature of lending practices present in real companies, we will factor in the behavior of fixed income securities markets along with client-provided information. </br>
+            
+            <br> Factoring in personal information alongside relevant macroeconomic data will allow a client to walk away with a clear understanding of their financial position in the current market climate. </br>
+            <br></br>
+            </p>
+        <p><button class="button"> Contact</button></p>
+      </div>
+    </div>
+  </div>
+</body>
 {% endblock content%}
+
+
+<!-- <a class="navbar-brand" href="{{ url_for('model') }}">Quick Start</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->

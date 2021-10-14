@@ -20,9 +20,14 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}" method="post">
-    	<input type="text" name="enginesize" placeholder="Engine Size" required="required" />
-        <input type="text" name="cylinders" placeholder="Cylinders" required="required" />
-		<input type="text" name="fuel" placeholder="Fuel" required="required" />
+      <input type="text" name="AMT_INCOME_TOTAL" placeholder="AMT_INCOME_TOTAL" required="required" />
+      <input type="text" name="AMT_CREDIT" placeholder="AMT_CREDIT" required="required" />
+		  <input type="text" name="AMT_ANNUITY" placeholder="AMT_ANNUITY" required="required" />
+      <input type="text" name="AMT_GOODS_PRICE" placeholder="AMT_GOODS_PRICE" required="required" />
+      <input type="text" name="DAYS_EMPLOYED" placeholder="DAYS_EMPLOYED" required="required" />
+      <input type="text" name="MONTHS_BALANCE" placeholder="MONTHS_BALANCE" required="required" />
+      <input type="text" name="AMT_PAYMENT_CURRENT" placeholder="AMT_PAYMENT_CURRENT" required="required" />
+      <input type="text" name="CNT_INSTALMENT_MATURE_CUM" placeholder="CNT_INSTALMENT_MATURE_CUM" required="required" />
 
         <button type="submit" class="btn">Predict</button>
     </form>

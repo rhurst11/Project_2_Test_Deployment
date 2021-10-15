@@ -349,7 +349,7 @@ keras-vis==0.4.1
 tensorboard==2.6.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
-tensorflow @ file:///tensorflow-2.6.0-cp37-cp37m-linux_x86_64.whl
+# tensorflow @ file:///tensorflow-2.6.0-cp37-cp37m-linux_x86_64.whl
 tensorflow-datasets==4.0.1
 tensorflow-estimator==2.6.0
 tensorflow-gcs-config==2.6.0
